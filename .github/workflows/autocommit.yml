@@ -7,7 +7,7 @@ on:
       - master
       
   schedule:
-  - cron: "*/6 * * * *"
+  - cron: "*/10 * * * *"
 
 jobs:
   auto_commit:
@@ -29,14 +29,14 @@ jobs:
           git config --local user.name "MikeOwino"
           git add -A
           
-          arr[0]="😂 BTC"
-          arr[1]="😱 ETH"
-          arr[2]="👿 BNB"
-          arr[3]="💩 DOGE"
-          arr[4]="🙏 KCS"
-          arr[5]="🙈 EOS"
-          arr[6]="🐐 LUNA"
-          arr[7]="🚀 FTM"
+          arr[0]="feat: 😂 auto commit"
+          arr[1]="feat: 😱 auto commit"
+          arr[2]="feat: 👿 auto commit"
+          arr[3]="feat: 💩 auto commit"
+          arr[4]="feat: 🙏 auto commit"
+          arr[5]="feat: 🙈 auto commit"
+          arr[6]="feat: 🐐 auto commit"
+          arr[7]="feat: 🚀 auto commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
